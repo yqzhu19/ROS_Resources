@@ -1,0 +1,11 @@
+##### 机器人描述description
+- 文件 urdf
+- urdf语法规范：XML specifications
+- 【https://zhuanlan.zhihu.com/p/452791019】
+- link: 用于描述机器人(也即刚体部分)某个部件的外观和物理属性，每一个部件对应一个link。在link内，可以设计该部件的形状，尺寸，颜色，惯性矩阵，碰撞参数等一系列属性。link标签中主要包含3个子标签，visual，collision，inertial。
+  - visual: 用于描述外观
+    - geometry: 设置连杆的形状
+    - origin: 设置连杆的偏移量与倾斜弧度
+    - metrial: 设置连杆的材料属性(颜色)
+  - collision: 用于设置连杆的碰撞属性
+  - inertial: 用于设置连杆的惯性矩阵
