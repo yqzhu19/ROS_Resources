@@ -38,13 +38,13 @@
 - 2.4 文件包含：
 - 机器人模型由多部件组成，不同部件可封装为单独的xcaro文件，最后再将不同的文件集成，组成完整的机器人。
 
-'''
+···
   <robot  name="你定义的名字" xmlns:xacro="http://wiki.ros.org/xacro">
     <xacro:include filename="demo05_car_base.xacro" />
     <xacro:include filenmae="demo06_car_camera.xacro" />
     <xacro:include filename="demo07_car_laser.xacro" />
   </robot>
- '''
+···
 
 - 3. launch中加载:
 - 编写玩xacro文件后，想在launch文件中加载，有两种方式可选。
